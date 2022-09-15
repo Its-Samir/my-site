@@ -60,7 +60,6 @@ body {
     height: 3px;
     background-color: #fff;
     margin: 2px auto;
-    transition: .5s;
 }
 
 .content {
@@ -400,9 +399,7 @@ hr {
 .homePageArrowIcon {
     color: #fff;
     font-size: 2.5rem;
-    position: absolute;
-    top: 80px;
-    left: 20px;
+    margin: 20px 0 0 20px;
 }
 .projectGrids {
     background-color: #000;
