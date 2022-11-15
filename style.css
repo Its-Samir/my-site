@@ -851,9 +851,6 @@ input[type=text]:focus {
 }
 
 @media (max-width: 360px) {
-    .check {
-        margin: 10px;
-    }
 
     input[type=text] {
         height: .7rem;
