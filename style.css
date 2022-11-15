@@ -173,7 +173,6 @@ p {
     height: 40px;
     width: 9rem;
     border: 1px solid rgb(11, 255, 255);
-    margin: 0 15px;
     text-align: center;
     border-radius: 2px;
     font-family: "Merriweather";
@@ -182,6 +181,11 @@ p {
     background-color: transparent;
     cursor: pointer;
     transition: 1s;
+}
+
+/* this is for download and check button anchor tag */
+.about a {
+    margin: 0 10px;
 }
 
 .download:hover {
@@ -355,6 +359,16 @@ hr {
     box-shadow: 5px 5px 10px #000;
 }
 
+.squareBoxOne a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.squareBoxTwo a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .squareBoxOne:hover {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("Imgs/programmer-working-flat-style_52683-15041.jpg");
     background-size: cover;
@@ -396,6 +410,14 @@ hr {
 
 .aboutDiv p {
     font-family: "Comfortaa";
+}
+
+.aboutDiv .socials {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
 }
 
 .homePageArrowIcon {
@@ -481,12 +503,23 @@ input[type=text]:focus {
     width: 200px;
 }
 
+.socials {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
 .locationIcon {
     margin: 0 10px 0 0;
 }
 
+.emailAndMobile .footerIcon {
+    margin: 0 10px;
+}
+
 .footerIcon {
-    margin: 0 10px 0 10px;
     color: #fff;
 }
 
@@ -631,6 +664,7 @@ input[type=text]:focus {
 
     .wholeFooter {
         display: block;
+        text-align: center;
     }
 
     #sendEmail .firstDiv {
@@ -640,8 +674,8 @@ input[type=text]:focus {
         margin: 50px auto -50px auto;
     }
 
-    .wholeFooter .location, .wholeFooter ul {
-        padding-left: 1rem;
+    .wholeFooter .location, .wholeFooter ul, .wholeFooter .socials {
+        margin: auto;
     }
 
     .wholeFooter ul, .wholeFooter .emailAndMobile {
