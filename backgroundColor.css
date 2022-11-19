@@ -875,18 +875,3 @@ input[type=text]:focus {
         font-size: .7rem;
     }
 }
-
-@media (max-width: 360px) {
-
-    input[type=text] {
-        height: .7rem;
-        width: 6rem;
-        padding: 10px 20px;
-        text-align: center;
-    }
-
-    ::placeholder {
-        text-align: center;
-    }
-
-}
