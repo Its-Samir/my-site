@@ -187,7 +187,7 @@ p {
 }
 
 /* this is for download and check button anchor tag */
-.about a {
+.about a:last-child {
     margin: 0 10px;
 }
 
@@ -645,6 +645,14 @@ input[type=text]:focus {
 
     .wrapper .staticText {
         display: none;
+    }
+
+    .about a {
+        margin: 0 5px;
+    }
+
+    .about a:last-child {
+        margin: 0 5px;
     }
 
     .photo {
