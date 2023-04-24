@@ -32,7 +32,7 @@ body {
     width: 100%;
     background-color: #000;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
@@ -41,7 +41,7 @@ body {
     color: #fff;
     font-family: 'Merriweather';
     cursor: pointer;
-    width: 5rem;
+    padding-left: 2.5rem;
 }
 
 .lists {
@@ -66,6 +66,10 @@ body {
 
 }
 
+.menuHolder {
+    padding-right: 2.5rem;
+}
+
 .darkModeIcon {
     color: #ffffff;
 }
@@ -85,9 +89,14 @@ body {
 
 .line {
     width: 25px;
-    height: 3px;
+    height: 1.5px;
     background-color: #fff;
     margin: 2px auto;
+}
+
+.line:nth-child(2) {
+    width: 65%;;
+    margin-left: 9px;
 }
 
 .content {
@@ -773,6 +782,7 @@ input[type=text]:focus {
 
     .logo {
         font-size: 1rem;
+        padding-left: 1.5rem;
     }
 
     .lists {
@@ -790,6 +800,10 @@ input[type=text]:focus {
         align-items: center;
     }
 
+    .menuHolder {
+        padding-right: 1.5rem;
+    }
+
     #menu {
         height: 15px;
         width: 15px;
@@ -802,26 +816,28 @@ input[type=text]:focus {
 
     .line {
         position: relative;
-        height: 1.5px;
+        height: 0.5px;
         width: 15px;
-        background-color: #fff;
         margin: 1.1px auto;
     }
 
+    .line:nth-child(2) {
+        margin-left: 5px;
+    }
+    
     .toggleOne {
         transform: rotate(45deg);
-        height: 2px;
+        height: 0.5px;
         width: 15px;
         top: 5px;
     }
 
     .toggleTwo {
         opacity: 0;
-
     }
 
     .toggleThree {
-        height: 2px;
+        height: 0.5px;
         transform: rotate(-45deg);
         width: 15px;
         bottom: 5px;
