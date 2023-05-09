@@ -71,12 +71,12 @@ body {
 }
 
 .darkModeIcon {
-    color: #ffffff;
+    color: #000000;
+    display: none;
 }
 
 .lightModeIcon {
-    color: #000000;
-    display: none;
+    color: #ffffff;
 }
 
 #menu {
