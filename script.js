@@ -1,7 +1,7 @@
 function enableLightMode() {
     $('head').children('link').last().attr('href', 'backgroundColor.css');
-    $('.lightModeIcon').css('display', 'none');
-    $('.darkModeIcon').css('display', 'block');
+    $('.light-mode-icon').css('display', 'none');
+    $('.dark-mode-icon').css('display', 'block');
 }
 
 if (localStorage.getItem('theme') === 'light') {
@@ -9,57 +9,57 @@ if (localStorage.getItem('theme') === 'light') {
 }
 
 $('#menu').click(function () {
-    $('.lists').toggleClass('toggleUl');
-    $('.one').toggleClass('toggleOne');
-    $('.two').toggleClass('toggleTwo');
-    $('.three').toggleClass('toggleThree');
+    $('.lists').toggleClass('toggle-ui');
+    $('.one').toggleClass('toggle-one');
+    $('.two').toggleClass('toggle-two');
+    $('.three').toggleClass('toggle-three');
 });
 
-$('.darkModeIcon').click(function () {
+$('.dark-mode-icon').click(function () {
     $('head').children('link').last().attr('href', 'style.css');
-    $('.lightModeIcon').css('display', 'block');
+    $('.light-mode-icon').css('display', 'block');
     localStorage.setItem('theme', 'dark');
-    $('.darkModeIcon').css('display', 'none');
+    $('.dark-mode-icon').css('display', 'none');
 });
 
-$('.lightModeIcon').click(function () {
+$('.light-mode-icon').click(function () {
     $('head').children('link').last().attr('href', 'backgroundColor.css');
-    $('.lightModeIcon').css('display', 'none');
+    $('.light-mode-icon').css('display', 'none');
     localStorage.setItem('theme', 'light');
-    $('.darkModeIcon').css('display', 'block');
+    $('.dark-mode-icon').css('display', 'block');
 });
 
-$('.skillsBtn').click(function () {
-    $('.skillBox').css('display', 'block');
+$('.skill-btn').click(function () {
+    $('.skill-box').css('display', 'block');
 
-    $('.skillsBtn').addClass('active');
-    $('.frontendSkillBtn').removeClass('active');
-    $('.backendSkillBtn').removeClass('active');
+    $('.skill-btn').addClass('active');
+    $('.frontend-skill-btn').removeClass('active');
+    $('.backend-skill-btn').removeClass('active');
 
-    $('.squareBoxOne').removeClass('showSquareBoxOne');
-    $('.squareBoxTwo').removeClass('showSquareBoxTwo');
+    $('.squarebox-one').removeClass('showsquarebox-one');
+    $('.squarebox-two').removeClass('showsquarebox-two');
 });
 
-$('.frontendSkillBtn').click(function () {
-    $('.squareBoxOne').addClass('showSquareBoxOne');
-    $('.squareBoxTwo').removeClass('showSquareBoxTwo');
+$('.frontend-skill-btn').click(function () {
+    $('.squarebox-one').addClass('showsquarebox-one');
+    $('.squarebox-two').removeClass('showsquarebox-two');
 
-    $('.frontendSkillBtn').addClass('active');
-    $('.skillsBtn').removeClass('active');
-    $('.backendSkillBtn').removeClass('active');
+    $('.frontend-skill-btn').addClass('active');
+    $('.skill-btn').removeClass('active');
+    $('.backend-skill-btn').removeClass('active');
 
-    $('.skillBox').css('display', 'none');
+    $('.skill-box').css('display', 'none');
 });
 
-$('.backendSkillBtn').click(function () {
-    $('.squareBoxTwo').addClass('showSquareBoxTwo');
-    $('.squareBoxOne').removeClass('showSquareBoxOne');
+$('.backend-skill-btn').click(function () {
+    $('.squarebox-two').addClass('showsquarebox-two');
+    $('.squarebox-one').removeClass('showsquarebox-one');
 
-    $('.backendSkillBtn').addClass('active');
-    $('.skillsBtn').removeClass('active');
-    $('.frontendSkillBtn').removeClass('active');
+    $('.backend-skill-btn').addClass('active');
+    $('.skill-btn').removeClass('active');
+    $('.frontend-skill-btn').removeClass('active');
 
-    $('.skillBox').css('display', 'none');
+    $('.skill-box').css('display', 'none');
 });
 
 let year = new Date().getFullYear();

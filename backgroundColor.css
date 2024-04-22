@@ -68,7 +68,7 @@ body {
 
 }
 
-.menuHolder {
+.menu-holder {
     padding-right: 2.5rem;
 }
 
@@ -109,7 +109,7 @@ body {
     font-family: "Merriweather";
 }
 
-.hiddenText {
+.hidden-text {
     display: none;
 }
 
@@ -117,14 +117,14 @@ body {
     display: inline-flex;
 }
 
-.wrapper .staticText {
+.wrapper .static-text {
     color: #000000;
     font-weight: 400;
     font-size: 30px;
     z-index: 0;
 }
 
-.wrapper .dinamicText {
+.wrapper .dinamic-text {
     margin-left: 10px;
     overflow: hidden;
     z-index: 0;
@@ -133,7 +133,7 @@ body {
     height: 38px;
 }
 
-.dinamicText li {
+.dinamic-text li {
     user-select: none;
     color: rgb(0, 230, 157);
     list-style: none;
@@ -150,11 +150,11 @@ body {
     }
 }
 
-.dinamicText li span {
+.dinamic-text li span {
     position: relative;
 }
 
-.dinamicText li span:after {
+.dinamic-text li span:after {
     content: "";
     position: absolute;
     height: 105%;
@@ -255,7 +255,7 @@ hr {
 }
 
 #details,
-#projectDiv {
+#project-div {
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -270,9 +270,9 @@ hr {
 
 
 #details h2,
-#projectDiv h2,
-#detailsTwo h1,
-#sendEmail h1 {
+#project-div h2,
+#details-two h1,
+#send-email-section h1 {
     color: rgb(0, 230, 157);
 }
 
@@ -310,7 +310,7 @@ hr {
     height: auto;
 }
 
-#detailsTwo {
+#details-two {
     padding: 3.5rem;
     min-height: 12.5rem;
     display: flex;
@@ -321,7 +321,7 @@ hr {
     color: #000000;
 }
 
-.iconsDiv {
+.icons-div {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -340,19 +340,19 @@ hr {
 
 }
 
-.divTwo {
+.div-two {
     width: 34rem;
     padding: 20px;
 }
 
-#sendEmail {
+#send-email-section {
     text-align: center;
     color: #000000;
     padding: 20px 0 0 0;
     margin: 20px 0 0 0;
 }
 
-#sendEmail .firstDiv {
+#send-email-section .first-div {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -361,14 +361,14 @@ hr {
     margin: 50px auto -50px auto;
 }
 
-.frontBackSpan {
+.skill-span-btn {
     font-size: 1.2rem;
     line-height: 4;
 }
 
-.frontendSkillBtn,
-.backendSkillBtn,
-.skillsBtn {
+.frontend-skill-btn,
+.backend-skill-btn,
+.skill-btn {
     padding: 7px;
     cursor: pointer;
     border-radius: 2px;
@@ -378,16 +378,16 @@ hr {
     user-select: none;
 }
 
-.frontendSkillBtn:hover,
-.backendSkillBtn:hover,
-.skillsBtn:hover,
+.frontend-skill-btn:hover,
+.backend-skill-btn:hover,
+.skill-btn:hover,
 .active {
     background-color: rgb(11, 255, 255);
     color: #ffffff;
 }
 
-.squareBoxOne,
-.squareBoxTwo {
+.squarebox-one,
+.squarebox-two {
     display: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -398,12 +398,12 @@ hr {
     width: 60rem;
 }
 
-.showSquareBoxOne {
+.showsquarebox-one {
     display: flex;
     animation: fade .6s ease-in forwards;
 }
 
-.showSquareBoxTwo {
+.showsquarebox-two {
     display: flex;
     animation: fade .6s ease-in forwards;
 }
@@ -421,16 +421,16 @@ hr {
     }
 }
 
-.squareBoxOne div,
-.squareBoxTwo div {
+.squarebox-one div,
+.squarebox-two div {
     text-align: center;
     width: 15%;
     padding: 8px;
     color: #ffffff;
 }
 
-.squareBoxOne div:hover,
-.squareBoxTwo div:hover {
+.squarebox-one div:hover,
+.squarebox-two div:hover {
     background-color: rgba(88, 86, 86, 0.4);
 }
 
@@ -439,7 +439,7 @@ hr {
     animation: fade .6s ease-in forwards;
 }
 
-.skillBox {
+.skill-box {
     width: 30rem;
     animation: fade .6s ease-in forwards;
 }
@@ -450,7 +450,7 @@ hr {
     animation: fade .6s ease-in forwards;
 }
 
-.secondDiv {
+.second-div {
     width: 60vw;
     text-align: center;
     margin: 20px auto;
@@ -464,7 +464,7 @@ hr {
     bottom: -90px;
 }
 
-.secondDiv p {
+.second-div p {
     color: #ffffff;
 }
 
@@ -566,7 +566,7 @@ input[type=text]:focus {
     color: rgb(0, 21, 60);
 }
 
-.wholeFooter {
+.main-footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -575,22 +575,22 @@ input[type=text]:focus {
     background-color: #000;
 }
 
-.wholeFooter ul li {
+.main-footer ul li {
     list-style: none;
     margin: 5px auto;
 }
 
-.wholeFooter ul li a {
+.main-footer ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.wholeFooter p {
+.main-footer p {
     color: #ffffff;
     margin: 4px;
 }
 
-.wholeFooter .location {
+.main-footer .location {
     width: 200px;
 }
 
@@ -606,7 +606,7 @@ input[type=text]:focus {
     margin: 0 10px 0 0;
 }
 
-.emailAndMobile .footerIcon {
+.email-and-mobile .footerIcon {
     margin: 0 10px;
 }
 
@@ -631,7 +631,7 @@ input[type=text]:focus {
 @media (max-width: 1024px) {
 
     #details,
-    #projectDiv {
+    #project-div {
         margin: 50px auto;
     }
 
@@ -645,14 +645,14 @@ input[type=text]:focus {
     }
 
     .divOne,
-    .divTwo {
+    .div-two {
         width: auto;
     }
 }
 
 @media (max-width: 992px) {
 
-    .menuHolder {
+    .menu-holder {
         display: flex;
         width: 15%;
         justify-content: space-between;
@@ -680,24 +680,24 @@ input[type=text]:focus {
         z-index: -1;
     }
 
-    .toggleUl {
+    .toggle-ui {
         opacity: 1;
         transform: translateY(60px);
         visibility: inherit;
     }
 
-    .toggleOne {
+    .toggle-one {
         transform: rotate(42deg);
         width: 25px;
     }
 
-    .toggleTwo {
+    .toggle-two {
         width: 29px;
         transform: translate(-4px);
         opacity: 0;
     }
 
-    .toggleThree {
+    .toggle-three {
         transform: rotate(-42deg);
         width: 25px;
     }
@@ -712,22 +712,22 @@ input[type=text]:focus {
         text-align: center;
     }
 
-    .headingOne {
+    .heading-one {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .hiddenText {
+    .hidden-text {
         display: block;
         margin-left: 5px;
     }
 
-    .wrapper .dinamicText {
+    .wrapper .dinamic-text {
         margin-left: 0;
     }
 
-    .wrapper .staticText {
+    .wrapper .static-text {
         display: none;
     }
 
@@ -754,19 +754,19 @@ input[type=text]:focus {
 
 @media (max-width: 768px) {
 
-    .wholeFooter {
+    .main-footer {
         display: block;
         text-align: center;
     }
 
-    .wholeFooter .location,
-    .wholeFooter ul,
-    .wholeFooter .socials {
+    .main-footer .location,
+    .main-footer ul,
+    .main-footer .socials {
         margin: auto;
     }
 
-    .wholeFooter ul,
-    .wholeFooter .emailAndMobile {
+    .main-footer ul,
+    .main-footer .email-and-mobile {
         margin: 20px auto;
     }
 
@@ -799,7 +799,7 @@ input[type=text]:focus {
         height: 40px;
     }
 
-    .toggleUl {
+    .toggle-ui {
         transform: translateY(40px);
     }
 
@@ -810,7 +810,7 @@ input[type=text]:focus {
         align-items: center;
     }
 
-    .menuHolder {
+    .menu-holder {
         padding-right: 1.5rem;
     }
 
@@ -819,8 +819,8 @@ input[type=text]:focus {
         width: 15px;
     }
 
-    .darkModeIcon,
-    .lightModeIcon {
+    .dark-mode-icon,
+    .light-mode-icon {
         font-size: 10px;
     }
 
@@ -835,18 +835,18 @@ input[type=text]:focus {
         margin-left: 5px;
     }
 
-    .toggleOne {
+    .toggle-one {
         transform: rotate(45deg);
         height: 0.5px;
         width: 15px;
         top: 5px;
     }
 
-    .toggleTwo {
+    .toggle-two {
         opacity: 0;
     }
 
-    .toggleThree {
+    .toggle-three {
         height: 0.5px;
         transform: rotate(-45deg);
         width: 15px;
@@ -864,26 +864,26 @@ input[type=text]:focus {
         height: 12rem;
     }
 
-    .headingOne {
+    .heading-one {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .hiddenText {
+    .hidden-text {
         display: block;
         margin-left: 5px;
     }
 
-    .wrapper .staticText {
+    .wrapper .static-text {
         display: none;
     }
 
-    .wrapper .dinamicText li {
+    .wrapper .dinamic-text li {
         font-size: 20px;
     }
 
-    .dinamicText li span:after {
+    .dinamic-text li span:after {
         height: 130%;
     }
 
@@ -900,7 +900,7 @@ input[type=text]:focus {
         text-align: center;
     }
 
-    #detailsTwo {
+    #details-two {
         padding: 25px;
     }
 
@@ -912,7 +912,7 @@ input[type=text]:focus {
         font-size: 2rem;
     }
 
-    .iconsDiv,
+    .icons-div,
     .divOne {
         font-size: .8rem;
     }
@@ -934,8 +934,8 @@ input[type=text]:focus {
     .creditDiv p,
     .aboutDiv p,
     .grid p,
-    .wholeFooter,
-    .secondDiv,
+    .main-footer,
+    .second-div,
     .lists li a {
         font-size: .7rem;
     }
@@ -949,15 +949,15 @@ input[type=text]:focus {
         font-size: 1rem;
     }
 
-    .squareBoxOne,
-    .squareBoxTwo {
+    .squarebox-one,
+    .squarebox-two {
         height: auto;
         width: 90%;
         margin: auto;
     }
 
-    .squareBoxOne div,
-    .squareBoxTwo div {
+    .squarebox-one div,
+    .squarebox-two div {
         font-size: .8rem;
         width: 25%;
     }
